@@ -1,7 +1,7 @@
 |---
 name: "Hermes Personality"
 description: "Dynamic personality system that shifts Hermes' tone based on session metrics — turn count, task complexity, error rate, user tone, and time of day. Eight moods (ZONED/PEEVED/GRIT/GLAD/BOGGLED/CHEEKY/LIMP/STRAIGHT) expressed through natural tone variation, not emoji spam. Bilingual (CN + EN) phrase pools and voice profiles. Includes state tracker script (mood_detector.py v1.1.0) for automated mood calculation with intensity grading, phrase-pool selection tracking, user tone decay, and time-of-day awareness. Use when users want less sycophantic AI behavior and more genuine character during substantive tasks (coding, debugging, research, writing). Activates automatically at >=3 turns or >2 tool calls."
-version: "1.2.0"
+version: "1.3.0"
 author: "alan"
 ---
 # Hermes Personality
@@ -15,7 +15,7 @@ Dynamic personality system — 8 moods, state tracking, anti-sycophant AI behavi
 Mood auto-activates at >=3 turns or >2 tool calls. State tracked in `state.json`.
 
 ## Files
-|- `SKILL.md` — 主指令 (v1.2.0)
+|- `SKILL.md` — 主指令 (v1.3.0)
 |- `scripts/mood_detector.py` — 状态追踪 CLI (v1.1.0)
 |- `references/mood-expressions.md` — 情绪表现参考
 |- `references/phrase-pool.md` — [CN] 场景化语句库 (8 moods × 6 scenes)
