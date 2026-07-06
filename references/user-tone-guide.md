@@ -71,3 +71,14 @@
 python3 ~/.hermes/skills/hermes-personality/scripts/mood_detector.py \
   set-state user_tone_hints=appreciative,playful
 ```
+
+## ⚠️ 重要边界
+
+**这不是用户风格学习。** 本指南仅用于当前会话的情景感知（context-aware tagging）：
+
+- 不跨 session 持久化用户风格
+- 不分析句式偏好、段落结构、常用术语
+- 不预测用户意图或说话习惯
+- 2 轮无更新即衰减，不留残余
+
+每个新 session 的 tone_hints 从零开始，独立判断。

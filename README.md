@@ -106,6 +106,19 @@ python3 scripts/mood_detector.py status      # Full state dump
 python3 scripts/mood_detector.py history     # Mood timeline
 ```
 
+## ⚠️ 重要边界说明 — 这不是用户风格学习
+
+⚠️ **这个系统不做用户风格学习。**
+
+`user_tone_hints` 只做**当前对话的情景感知**（context-aware tagging）：
+- 用户语气烦躁 → 不触发 CHEEKY（别开玩笑）
+- 用户在调侃 → 不触发 PEEVED（别当真）
+- 2 轮无新信息 → 自动衰减
+
+它**不会**跨 session 记忆你的说话习惯、句式偏好、专业术语、段落结构。不会预测你下一句话说什么。每个新会话的 `state.json` 是独立初始化的。
+
+想要风格学习？那是另一个独立的 feature，不在本 skill 范围内。
+
 ---
 
 ## 🧠 Philosophy
