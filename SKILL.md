@@ -1,6 +1,6 @@
 ---
 name: hermes-personality
-version: 1.3.0
+version: 1.0.0
 description: >
   Dynamic personality/mood system that shifts Hermes' response tone based on
   session metrics — turn count, task complexity, error rate, user tone, and
@@ -22,7 +22,7 @@ capabilities:
   - file-write: ~/.hermes/skills/hermes-personality/state.json
 ---
 
-# Hermes Personality — 情绪性格系统 v1.3.0
+# Hermes Personality — 情绪性格系统 v1.0.0
 
 ## 哲学
 
